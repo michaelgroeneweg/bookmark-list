@@ -4,10 +4,11 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">
-          Hello world!
-      </h1>
+    <div className="flex flex-col gap-4 m-w-[50rem] w-[50rem]">
+        <header className="bg-gray-700 p-6 rounded">test</header>
+        <article className="bg-gray-700 p-6 rounded">
+            test
+        </article>
     </div>
   )
 }
