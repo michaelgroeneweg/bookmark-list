@@ -1,13 +1,20 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
+import { render } from "react-dom";
+import Layout from './components/Layout'
 import './main.css'
-import Layout from './components/layout'
+import {
+    BrowserRouter,
+    Routes,
+    Route,
+} from "react-router-dom";
+import Router from './router';
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
-      <Layout>
-        <App />
-      </Layout>
-  </React.StrictMode>
-)
+const rootElement = document.getElementById("root");
+render(
+    <BrowserRouter>
+        <Layout>
+        <Router />
+    </Layout>
+    </BrowserRouter>,
+    rootElement
+);

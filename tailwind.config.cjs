@@ -19,6 +19,8 @@ module.exports = {
           800: '#2F2F2F',
           900: '#242424',
         },
+        'regal-blue': '#243c5a',
+        'bleed-blue': '#3B82F6',
       }
     },
   },

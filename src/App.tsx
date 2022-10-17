@@ -1,8 +1,7 @@
 import { useState } from 'react'
+import { PlusIcon } from '@heroicons/react/24/outline'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="flex flex-col gap-4 m-w-[50rem] w-[50rem]">
         <header className="bg-gray-200 dark:bg-gray-800 p-6 rounded">
@@ -20,10 +19,20 @@ function App() {
                 </div>
             </div>
         </header>
-        <article className="bg-gray-200 dark:bg-gray-800 p-6 rounded">
-            test
-        </article>
+        <div>
+            <article className="bg-gray-200 dark:bg-gray-800 p-6 rounded">
+                test
+            </article>
+        </div>
+        <div className="">
+            <button
+                className="bg-transparent border-none hover:text-purple-800 hover:bg-[#E6E8EC] dark:hover:bg-[#3E3E3E] dark:hover:text-[#C730C1] text-[#5D5D5D] text-sm font-semibold hover:text-white py-2 px-4 rounded">
+                <PlusIcon />Add
+            </button>
+        </div>
+
     </div>
+
   )
 }
 
