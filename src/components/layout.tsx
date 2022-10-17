@@ -12,7 +12,7 @@ const Layout: React.FC<Props>  =  ({children}) => {
     }, [isDarkMode]);
 
     return (
-        <div className="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+        <div className="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
             <header className="fixed py-6 px-10 w-screen">
                 <div className="flex justify-between p-0">
                     <div className="flex-1">test</div>
@@ -23,7 +23,7 @@ const Layout: React.FC<Props>  =  ({children}) => {
                     </div>
                 </div>
             </header>
-            <main className="grid place-items-center h-screen bg-gray-200 dark:bg-gray-900">
+            <main className="grid place-items-center h-screen dark:bg-gray-900">
                 {children}
             </main>
         </div>
