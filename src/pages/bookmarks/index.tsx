@@ -8,7 +8,7 @@ export const Bookmark = () => {
         <>
             <BookmarkList/>
             <div className="fixed bottom-6 right-6">
-              <Button><PlusIcon /></Button>
+              <Button rounded icon="PlusIcon"/>
             </div>
         </>
     );

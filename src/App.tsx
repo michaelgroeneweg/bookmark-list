@@ -30,7 +30,6 @@ function App() {
                 <PlusIcon />Add
             </button>
         </div>
-
     </div>
 
   )

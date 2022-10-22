@@ -1,20 +1,14 @@
 import React from 'react'
-import { render } from "react-dom";
 import Layout from './components/Layout'
+import ReactDOM from 'react-dom/client'
 import './main.css'
-import {
-    BrowserRouter,
-    Routes,
-    Route,
-} from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Router from './router';
 
-const rootElement = document.getElementById("root");
-render(
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <BrowserRouter>
         <Layout>
-        <Router />
-    </Layout>
-    </BrowserRouter>,
-    rootElement
+            <Router />
+        </Layout>
+    </BrowserRouter>
 );
