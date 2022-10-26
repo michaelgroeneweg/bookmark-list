@@ -4,7 +4,7 @@ import Button from '../../components/Button'
 import BookmarkList from '../../views/bookmarks/BookmarkList'
 import { Modal } from '../../components/Modal';
 import { useModal } from '../../hooks/useModal';
-import AddBookmarkForm from "../../views/bookmarks/AddBookmarkForm";
+import AddBookmarkForm from "../../views/bookmarks/forms/AddBookmarkForm";
 
 export const Bookmark: FunctionComponent = () => {
     const { isShown, toggle } = useModal();

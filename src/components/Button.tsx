@@ -8,6 +8,7 @@ export interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     disabled?: boolean;
     size?: string, // sm, md, lg
     rounded?: boolean,
+    full?: boolean,
 }
 
 const Button: React.FC<Props> = ({
@@ -18,13 +19,14 @@ const Button: React.FC<Props> = ({
                                      disabled,
                                      icon,
                                      rounded,
+                                     full,
                                      ...rest
                                  }) => {
     // @ts-ignore
 
     return (
         <button
-            className={`btn ${variant} ${size}` + (disabled ? ' disabled' : '') + (rounded ? ' rounded-full p-4' : '')}
+            className={`btn ${variant} ${size}` + (disabled ? ' disabled' : '') + (rounded ? ' rounded-full p-4' : '') + (full ? ' w-full' : '')}
             onClick={onClick}
             disabled={disabled}
             {...rest}
