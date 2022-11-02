@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 
-import { Bookmark } from "./pages/bookmarks";
+import { Bookmarks } from "./pages/Bookmarks";
 
 const Router = () => {
     return (
         <Routes>
-            <Route index element={<Bookmark />} />
+            <Route index element={<Bookmarks />} />
         </Routes>
     );
 };

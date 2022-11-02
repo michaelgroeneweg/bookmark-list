@@ -1,9 +1,9 @@
-import React, {ComponentType} from "react";
+import React from "react";
 import { HeroIcon, IconName } from './HeroIcon';
 
 export interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    children: React.ReactNode
-    icon?: ComponentType<IconName>
+    children?: React.ReactNode
+    icon?: IconName
     variant?: string, // default, primary, info, success, warning, danger, dark
     disabled?: boolean;
     size?: string, // sm, md, lg

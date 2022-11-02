@@ -4,7 +4,7 @@ import { useDarkMode } from 'usehooks-ts'
 
 type Props = { children: React.ReactNode };
 
-const Layout: React.FC<Props>  =  ({children}) => {
+const Default: React.FC<Props>  =  ({children}) => {
     const { isDarkMode, toggle } = useDarkMode()
 
     useEffect(() => {
@@ -30,4 +30,4 @@ const Layout: React.FC<Props>  =  ({children}) => {
     );
 }
 
-export default Layout;
+export default Default;

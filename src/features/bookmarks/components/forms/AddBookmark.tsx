@@ -1,10 +1,10 @@
-import Button from "../../../components/Button";
+import Button from "../../../../components/ui/Button";
 import {useState} from "react";
 import {data} from "autoprefixer";
 import axios from "axios";
 import * as cheerio from 'cheerio';
 
-const AddBookmarkForm = () => {
+const AddBookmark = () => {
     const [enteredUrl, setEnteredUrl] = useState();
     const [enteredTitle, setEnteredTitle] = useState<string>();
     const [enteredDescription, setEnteredDescription] = useState<string>();
@@ -79,4 +79,4 @@ const AddBookmarkForm = () => {
     )
 };
 
-export default AddBookmarkForm
+export default AddBookmark

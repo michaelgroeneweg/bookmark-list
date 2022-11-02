@@ -2,7 +2,6 @@ import { Dialog, Transition } from '@headlessui/react'
 import React, {Fragment, FunctionComponent, useState} from 'react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import ReactDOM from 'react-dom';
-import {Props} from "./Button";
 
 export interface ModalProps extends React.HTMLAttributes<HTMLElement> {
     isShown: boolean;
